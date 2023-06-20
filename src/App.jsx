@@ -3,14 +3,14 @@ import shairalarry from './assets/shaira-larry.mp4'
 
 const App = () => {
   return (
-    <div className='w-auto h-screen flex flex-col pt-5 items-center bg-red-100'>
+    <div className='w-auto h-screen flex flex-col pt-5 items-center bg-bg-100'>
       <video loop  muted autoPlay className='aspect-auto'>
       <source src={shairalarry} type="video/mp4"/>
      </video>
-     <h1 className='font-primary  text-5xl mt-5 text-slate-900 font-black'>
+     <h1 className='font-primary  text-6xl mt-5 text-text-100 font-black'>
       Shaira and Larry
      </h1>
-     <h4 className='font-primary  mx-1 sm:mx-96 text-slate-900'>
+     <h4 className='font-sans text-sm  mx-1 sm:mx-96 text-text-200'>
      Congratulations on your upcoming wedding! 
      I wanted to send a quick message to express 
      my excitement and best wishes for the two of you. 
