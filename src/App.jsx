@@ -1,34 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import shairalarry from './assets/shaira-larry.mp4'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='w-auto h-screen flex flex-col pt-5 items-center bg-red-100'>
+      <video loop  muted autoPlay className='aspect-auto'>
+      <source src={shairalarry} type="video/mp4"/>
+     </video>
+     <h1 className='font-primary  text-5xl mt-5 text-slate-900 font-black'>
+      Shaira and Larry
+     </h1>
+     <h4 className='font-primary  mx-1 sm:mx-96 text-slate-900'>
+     Congratulations on your upcoming wedding! 
+     I wanted to send a quick message to express 
+     my excitement and best wishes for the two of you. 
+     Shaira, my dear younger sister, I couldn't be happier 
+     for you as you embark on this beautiful journey with Larry. 
+     May your love grow stronger with each passing day, and may your wedding day be filled with love, joy, and cherished moments. Wishing you a lifetime of happiness together!
+
+With love,
+     </h4>
+    </div>
   )
 }
 
