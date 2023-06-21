@@ -28,11 +28,15 @@ const App = () => {
         <source src={shairaLarry} type="video/mp4" />
       </video>
       <Lottie
-        onClick={animate}
+        //onClick={animate}
+        onComplete={animate
+        }
+        
+        
         loop={false}
         lottieRef={weddingFloralRef}
         animationData={weddingFloral} />
-      <h1 className='font-primary  text-6xl mt-5 text-text-100 font-black'>
+      <h1 className='z-20 font-primary  text-6xl mt-5 text-text-100 font-black'>
         Shaira and Larry
       </h1>
       <h4 className='font-sans text-sm  mx-1 sm:mx-96 text-text-200'>
